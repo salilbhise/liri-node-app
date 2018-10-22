@@ -32,7 +32,7 @@ var commandCall = (nameArr).join(" ");
 // Hold the commands
 // concert-this, spotify-this-song, movie-this, do-what-it-says
 function choose(inputCommand) {
-    //choose what command to run
+    // Choose what command to run
     switch (inputCommand) {
         case "concert-this":
             bandsInTownCall();
@@ -57,7 +57,7 @@ function omdbCall() {
     // If no movie is provided...
     if (commandCall === "") {
         // Default movie
-        commandCall = "The Dark Knight";
+        commandCall = "Mr. Nobody";
     }
 
     // Runs a request to the OMDB API with the movie specified
@@ -131,7 +131,7 @@ function spotifyApi() {
         nameArr = nameArr.join(" ");
     } else {
         // Pass in the following song in case no song was passed in...
-        nameArr = "Gucci Gang";
+        nameArr = "The Sign";
     }
 
     // Holds names of artists
